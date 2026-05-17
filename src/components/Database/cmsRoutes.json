@@ -1,0 +1,100 @@
+{
+  "routes": [
+    {
+      "id": 1,
+      "path": "/",
+      "name": "Home",
+      "component": "HomePage",
+      "isProtected": false,
+      "roles": [],
+      "meta": {
+        "title": "Home Page",
+        "description": "Welcome to our website"
+      }
+    },
+    {
+      "id": 2,
+      "path": "/auth",
+      "name": "AuthPage",
+      "component": "AuthPage",
+      "isProtected": false,
+      "roles": [],
+      "meta": {
+        "title": "Auth Page",
+        "description": "Welcome to our auth page"
+      }
+    },
+    {
+      "id": 3,
+      "path": "/shop",
+      "name": "Products",
+      "component": "Products",
+      "isProtected": true,
+      "roles": ["admin", "user"],
+      "meta": {
+        "title": "Shop Page",
+        "description": "Welcome to our product page"
+      }
+    },
+    {
+      "id": 4,
+      "path": "/shop/:id",
+      "name": "ProductDetail",
+      "component": "ProductDetail",
+      "isProtected": true,
+      "roles": ["admin", "user"],
+      "meta": {
+        "title": "Product Detail Page",
+        "description": "Welcome to our product detail page"
+      }
+    },
+    {
+      "id": 5,
+      "path": "/cart",
+      "name": "CartPage",
+      "component": "CartPage",
+      "isProtected": true,
+      "roles": ["admin", "user"],
+      "meta": {
+        "title": "Cart Page",
+        "description": "Welcome to our cart page"
+      }
+    },
+    {
+      "id": 6,
+      "path": "/about",
+      "name": "AboutPage",
+      "component": "AboutPage",
+      "isProtected": true,
+      "roles": ["admin", "user"],
+      "meta": {
+        "title": "About Page",
+        "description": "Welcome to our about page"
+      }
+    },
+    {
+      "id": 7,
+      "path": "/checkout",
+      "name": "Checkout",
+      "component": "Checkout",
+      "isProtected": true,
+      "roles": ["admin", "user"],
+      "meta": {
+        "title": "Checkout Page",
+        "description": "Welcome to our checkout page"
+      }
+    },
+    {
+      "id": 8,
+      "path": "/thank-you/:id",
+      "name": "ThankYou",
+      "component": "ThankYou",
+      "isProtected": true,
+      "roles": ["admin", "user"],
+      "meta": {
+        "title": "Thank You Page",
+        "description": "Welcome to our thank you page"
+      }
+    }
+  ]
+}
